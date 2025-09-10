@@ -1,4 +1,4 @@
-import { Button, Input } from "../lib/main";
+import { Button, Input } from "ui-react";
 import "./App.css";
 
 function App() {
