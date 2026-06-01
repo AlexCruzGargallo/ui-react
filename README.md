@@ -1,6 +1,11 @@
 # @alexcruzgargallo/ui-react
 
+[![npm version](https://img.shields.io/npm/v/@alexcruzgargallo/ui-react)](https://www.npmjs.com/package/@alexcruzgargallo/ui-react)
+[![npm downloads](https://img.shields.io/npm/dm/@alexcruzgargallo/ui-react)](https://www.npmjs.com/package/@alexcruzgargallo/ui-react)
+
 A lightweight React component library built with TypeScript, Vite, and CSS Modules. Ships as a fully-typed ES module with scoped styles injected automatically.
+
+📦 **npm:** [npmjs.com/package/@alexcruzgargallo/ui-react](https://www.npmjs.com/package/@alexcruzgargallo/ui-react)
 
 ## Installation
 
@@ -9,6 +14,10 @@ npm install @alexcruzgargallo/ui-react
 ```
 
 > **Peer dependencies:** React 19+ must be installed in your project.
+
+```bash
+npm install react react-dom
+```
 
 ## Usage
 
