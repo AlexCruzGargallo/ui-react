@@ -1,0 +1,147 @@
+{
+  "library": "@alexcruzgargallo/ui-react",
+  "components": [
+    {
+      "name": "Spinner",
+      "description": "Animated loading spinner. Renders a `<span role=\"status\">` for accessibility.",
+      "importPath": "@alexcruzgargallo/ui-react",
+      "props": [
+        {
+          "name": "size",
+          "type": "enum",
+          "default": "medium",
+          "required": false,
+          "description": "Size of the spinner."
+        }
+      ]
+    },
+    {
+      "name": "Input",
+      "description": "Text input with optional label, helper text and inline error message.",
+      "importPath": "@alexcruzgargallo/ui-react",
+      "props": [
+        {
+          "name": "label",
+          "type": "string",
+          "required": false,
+          "description": "Label displayed above the input."
+        },
+        {
+          "name": "error",
+          "type": "string",
+          "required": false,
+          "description": "Error message shown below the input. Sets `aria-invalid` and applies error styles."
+        },
+        {
+          "name": "helperText",
+          "type": "string",
+          "required": false,
+          "description": "Helper text shown below the input when there is no error."
+        },
+        {
+          "name": "size",
+          "type": "enum",
+          "default": "medium",
+          "required": false,
+          "description": "Size of the input field."
+        }
+      ]
+    },
+    {
+      "name": "Checkbox",
+      "description": "Checkbox input with optional label and inline error message.",
+      "importPath": "@alexcruzgargallo/ui-react",
+      "props": [
+        {
+          "name": "label",
+          "type": "string",
+          "required": false,
+          "description": "Label text displayed next to the checkbox."
+        },
+        {
+          "name": "error",
+          "type": "string",
+          "required": false,
+          "description": "Error message shown below the checkbox. Sets `aria-invalid`."
+        },
+        {
+          "name": "size",
+          "type": "enum",
+          "default": "medium",
+          "required": false,
+          "description": "Size of the checkbox and its label."
+        }
+      ]
+    },
+    {
+      "name": "Card",
+      "description": "Container card with configurable padding and optional shadow.",
+      "importPath": "@alexcruzgargallo/ui-react",
+      "props": [
+        {
+          "name": "padding",
+          "type": "enum",
+          "default": "medium",
+          "required": false,
+          "description": "Internal padding of the card."
+        },
+        {
+          "name": "shadow",
+          "type": "boolean",
+          "default": "true",
+          "required": false,
+          "description": "Whether to show a subtle drop shadow."
+        }
+      ]
+    },
+    {
+      "name": "Button",
+      "description": "Button component with multiple variants and sizes.",
+      "importPath": "@alexcruzgargallo/ui-react",
+      "props": [
+        {
+          "name": "variant",
+          "type": "enum",
+          "default": "primary",
+          "required": false,
+          "description": "Visual style of the button."
+        },
+        {
+          "name": "size",
+          "type": "enum",
+          "default": "medium",
+          "required": false,
+          "description": "Size of the button."
+        },
+        {
+          "name": "loading",
+          "type": "boolean",
+          "default": "false",
+          "required": false,
+          "description": "When true, shows a spinner and disables the button."
+        }
+      ]
+    },
+    {
+      "name": "Badge",
+      "description": "",
+      "importPath": "@alexcruzgargallo/ui-react",
+      "props": [
+        {
+          "name": "variant",
+          "type": "enum",
+          "default": "primary",
+          "required": false,
+          "description": "Color variant of the badge."
+        },
+        {
+          "name": "size",
+          "type": "enum",
+          "default": "medium",
+          "required": false,
+          "description": "Size of the badge."
+        }
+      ]
+    }
+  ]
+}
