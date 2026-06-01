@@ -1,7 +1,7 @@
 {
   "name": "@alexcruzgargallo/ui-react",
   "author": "Alex Cruz Gargallo ",
-  "version": "0.0.6",
+  "version": "1.0.0",
   "type": "module",
   "main": "./dist/main.js",
   "module": "./dist/main.js",
