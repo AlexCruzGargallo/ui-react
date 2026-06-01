@@ -7,18 +7,22 @@ const meta: Meta<typeof Button> = {
   argTypes: {
     variant: {
       control: { type: "select" },
-      options: ["primary", "secondary", "danger"],
+      options: ["primary", "secondary", "danger", "ghost"],
     },
     size: {
       control: { type: "select" },
       options: ["small", "medium", "large"],
     },
+    loading: { control: "boolean" },
+    disabled: { control: "boolean" },
     onClick: { action: "clicked" },
   },
   args: {
     children: "Click Me",
     variant: "primary",
     size: "medium",
+    loading: false,
+    disabled: false,
   },
 };
 
@@ -52,5 +56,24 @@ export const Large: Story = {
 export const Small: Story = {
   args: {
     size: "small",
+  },
+};
+
+export const Ghost: Story = {
+  args: {
+    variant: "ghost",
+  },
+};
+
+export const Loading: Story = {
+  args: {
+    loading: true,
+    children: "Saving...",
+  },
+};
+
+export const Disabled: Story = {
+  args: {
+    disabled: true,
   },
 };
