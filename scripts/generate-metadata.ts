@@ -31,6 +31,10 @@ const components = files.flatMap((file) => {
     props: Object.entries(component.props).map(([name, prop]) => ({
       name,
       type: prop.type.name,
+      // For union types like "primary" | "secondary", keep the allowed values
+      values: Array.isArray(prop.type.value)
+        ? prop.type.value.map((v: { value: string }) => v.value.replace(/^["']|["']$/g, ""))
+        : undefined,
       default: prop.defaultValue?.value ?? undefined,
       required: prop.required,
       description: prop.description || undefined,

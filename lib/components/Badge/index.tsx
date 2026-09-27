@@ -8,6 +8,9 @@ export type BadgeProps = React.HTMLAttributes<HTMLSpanElement> & {
   size?: "small" | "medium";
 };
 
+/**
+ * Small status label to highlight a state, category or count.
+ */
 export function Badge({
   variant = "primary",
   size = "medium",
